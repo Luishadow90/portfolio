@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Luis Hernández — Technical SEO & Web Growth. GA4, GSC, Screaming Frog, WordPress/Webflow/SharePoint. Case studies con impacto medible." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://luishadow90.github.io/portfolio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Luis Hernández — Technical SEO & Web Growth" />
+  <meta property="og:description" content="SEO técnico + analytics + web development. Case studies y resultados." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://luishadow90.github.io/portfolio/" />
+  <meta property="og:image" content="assets/hero.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luis Hernández — Technical SEO & Web Growth" />
+  <meta name="twitter:description" content="SEO técnico + analytics + web dev. Case studies y resultados." />
+  <meta name="twitter:image" content="assets/hero.jpg" />
+
+  <title>Luis Hernández | Technical SEO & Web Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD (Personal) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Luis Miguel Hernández Hernández",
+    "jobTitle":"SEO Specialist / Web Growth",
+    "address":{"@type":"PostalAddress","addressCountry":"MX","addressRegion":"Estado de México"},
+    "email":"mailto:lrc.luis.hernandez@gmail.com",
+    "telephone":"+52-55-4652-6028",
+    "url":"https://luishadow90.github.io/portfolio/",
+    "sameAs":["https://www.linkedin.com/in/luis-miguel-hernandez/"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#main" data-i18n="skip_to_content">Saltar al contenido</a>
+
+  <header class="topbar" id="top">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Luis Hernández</span>
+      </a>
+
+      <div class="theme-switch" title="Light / Dark">
+        <span class="theme-ic" aria-hidden="true">☀︎</span>
+
+        <label class="switch" aria-label="Cambiar tema claro/oscuro">
+          <input id="themeToggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+
+        <span class="theme-ic" aria-hidden="true">☾</span>
+      </div>
+
+      <div class="lang-switch" title="Idioma">
+        <button id="langToggle" class="pill" type="button" aria-label="Cambiar idioma">
+            <span data-i18n="lang_toggle">ES / EN</span>
+        </button>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" data-i18n="menu_btn">
+        Menú
+      </button>
+
+      <div class="menu" id="menu">
+        <a href="#cases" data-i18n="nav_cases">Casos</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#experience" data-i18n="nav_experience">Experiencia</a>
+        <a href="#contact" data-i18n="nav_contact">Contacto</a>
+        <a class="pill" href="assets/resume.pdf" target="_blank" rel="noopener" data-i18n="nav_download_cv">Descargar CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="hero_kicker">Technical SEO • Web Growth • Analytics</p>
+
+          <h1 data-i18n="hero_title">Llevo SEO técnico y experiencias web a resultados medibles.</h1>
+
+          <p class="sub" data-i18n="hero_sub">
+            SEO Specialist con enfoque en <strong>GA4/GSC</strong>, auditorías con <strong>Screaming Frog</strong>,
+            performance (Core Web Vitals) y colaboración con <strong>UX/UI + producto + dev</strong>.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#cases" data-i18n="cta_cases">Ver case studies</a>
+            <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener" data-i18n="cta_cv">CV (PDF)</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/luis-miguel-hernandez/" target="_blank" rel="noopener" data-i18n="cta_linkedin">LinkedIn</a>
+          </div>
+
+          <ul class="proof" aria-label="Resultados destacados">
+            <li><strong>+35%</strong><span data-i18n="proof_1">Organic sessions QoQ</span></li>
+            <li><strong>-40%</strong><span data-i18n="proof_2">Crawl errors</span></li>
+            <li><strong>+15%</strong><span data-i18n="proof_3">CTR por tests de metadata</span></li>
+            <li><strong>13+ yrs</strong><span data-i18n="proof_4">SEO & growth en múltiples industrias</span></li>
+          </ul>
+
+          <div class="meta">
+            <span data-i18n="meta_location">🇲🇽 Estado de México · Remoto/Híbrido</span>
+            <span data-i18n="meta_english">English: B2</span>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Perfil">
+          <img class="avatar" src="assets/Luis-Hernández.jpg" alt="Foto de Luis Hernández" loading="lazy" />
+          <div class="hero-card-body">
+            <h2 class="h2" data-i18n="hero_focus_title">Focus actual</h2>
+
+            <p class="muted" data-i18n="hero_focus_desc">
+              SEO técnico, analítica (GA4/GSC/Looker), optimización de journeys y performance.
+            </p>
+
+            <div class="chip-row" aria-label="Tecnologías">
+              <span class="chip">GA4</span>
+              <span class="chip">GSC</span>
+              <span class="chip">Screaming Frog</span>
+              <span class="chip">WordPress</span>
+              <span class="chip">Webflow</span>
+              <span class="chip">SharePoint</span>
+              <span class="chip">Google Tag Manager</span>
+            </div>
+
+            <div class="mini-cta">
+              <a class="link" href="#contact" data-i18n="cta_talk">Hablemos →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/hero.jpg" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="cases_title">Case studies</h2>
+          <p class="muted" data-i18n="cases_desc">Menos “galería”, más evidencia. Abre cada caso para ver problema → acciones → impacto.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtros de proyectos">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true" data-i18n="filter_all">Todos</button>
+          <button class="filter" data-filter="seo" role="tab" aria-selected="false" data-i18n="filter_seo">SEO</button>
+          <button class="filter" data-filter="web" role="tab" aria-selected="false" data-i18n="filter_web">Web</button>
+          <button class="filter" data-filter="analytics" role="tab" aria-selected="false" data-i18n="filter_analytics">Analytics</button>
+          <button class="filter" data-filter="automation" role="tab" aria-selected="false" data-i18n="filter_automation">Automation</button>
+        </div>
+
+        <div class="cards" id="projectGrid" aria-label="Listado de proyectos">
+
+          <!-- Kueski -->
+          <article class="card" data-tags="seo,analytics">
+            <figure class="card-media">
+              <img src="assets/data-visualization.jpg" alt="Caso: Crecimiento orgánico en fintech" loading="lazy">
+              <figcaption class="card-overlay">
+                <span class="case-badge" data-i18n="case_badge_fintech">Fintech</span>
+                <div class="case-kpi">
+                  <strong>+35%</strong>
+                  <span data-i18n="kpi_sessions_qoq">Sessions QoQ</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">Tech SEO</span>
+                  <span class="case-tag">Content</span>
+                  <span class="case-tag">UX</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 data-i18n="case_kueski_title">Kueski — SEO Growth (Fintech)</h3>
+              <p class="muted" data-i18n="case_kueski_desc">Estrategia end-to-end: research → briefs → tech SEO → reporting.</p>
+              <ul class="bullets">
+                <li><strong>+35%</strong> <span data-i18n="case_kueski_b1">sessions QoQ</span></li>
+                <li><strong>-40%</strong> <span data-i18n="case_kueski_b2">crawl errors</span></li>
+                <li><strong>+15%</strong> <span data-i18n="case_kueski_b3">CTR con A/B de metadata</span></li>
+              </ul>
+              <button class="btn small" data-modal="kueski">
+                <span data-i18n="btn_view_details">Ver detalles</span>
+                <span class="sr-only" data-i18n="sr_case_kueski">del caso Kueski</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Humanitas -->
+          <article class="card" data-tags="seo,web,analytics">
+            <figure class="card-media">
+              <img src="assets/universidad-humanitas-img.jpg" alt="Caso: Indexación y performance en Vue/Django" loading="lazy">
+              <figcaption class="card-overlay">
+                <span class="case-badge" data-i18n="case_badge_edtech">EdTech</span>
+                <div class="case-kpi">
+                  <strong data-i18n="kpi_cwv_title">Core Web Vitals</strong>
+                  <span data-i18n="kpi_indexing_perf">Indexing + Performance</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">Vue</span>
+                  <span class="case-tag">Django</span>
+                  <span class="case-tag">Schema</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 data-i18n="case_humanitas_title">Universidad Humanitas — Indexación & Core Web Vitals</h3>
+              <p class="muted" data-i18n="case_humanitas_desc">Diagnóstico de crawling/indexing, SSR/WPO y metadatos (OG/Schema).</p>
+              <ul class="bullets">
+                <li data-i18n="case_humanitas_b1">SEO técnico en Vue.js + Django</li>
+                <li data-i18n="case_humanitas_b2">Optimización Core Web Vitals</li>
+                <li data-i18n="case_humanitas_b3">Plan de migración a WordPress (SEO safe)</li>
+              </ul>
+              <button class="btn small" data-modal="humanitas">
+                <span data-i18n="btn_view_details">Ver detalles</span>
+                <span class="sr-only" data-i18n="sr_case_humanitas">del caso Universidad Humanitas</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- IQVIA -->
+          <article class="card" data-tags="web,analytics,automation">
+            <figure class="card-media">
+              <img src="assets/journey.jpg" alt="Caso: Optimización de journeys y SharePoint" loading="lazy">
+              <figcaption class="card-overlay">
+                <span class="case-badge" data-i18n="case_badge_enterprise">Enterprise</span>
+                <div class="case-kpi">
+                  <strong data-i18n="kpi_journeys">Journeys</strong>
+                  <span data-i18n="kpi_ux_conversion">UX + Conversion</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">SharePoint</span>
+                  <span class="case-tag">Salesforce</span>
+                  <span class="case-tag" data-i18n="tag_web_dev">Web Development</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 data-i18n="case_iqvia_title">IQVIA — SharePoint & Journeys</h3>
+              <p class="muted" data-i18n="case_iqvia_desc">Optimización UX/UI y journeys; soporte a campañas y dashboards.</p>
+              <ul class="bullets">
+                <li data-i18n="case_iqvia_b1">Desarrollo de websites y landing pages</li>
+                <li data-i18n="case_iqvia_b2">Mejoras UX/UI orientadas a conversión</li>
+                <li data-i18n="case_iqvia_b3">Segmentación y soporte en SFMC</li>
+              </ul>
+              <button class="btn small" data-modal="iqvia">
+                <span data-i18n="btn_view_details">Ver detalles</span>
+                <span class="sr-only" data-i18n="sr_case_iqvia">del caso IQVIA</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Accenture -->
+          <article class="card" data-tags="web,analytics">
+            <figure class="card-media">
+              <img src="assets/performance.png" alt="Caso: WordPress VIP y Drupal 9 en Agile" loading="lazy">
+              <figcaption class="card-overlay">
+                <span class="case-badge" data-i18n="case_badge_agency">Agency</span>
+                <div class="case-kpi">
+                  <strong>WP VIP</strong>
+                  <span data-i18n="kpi_perf_a11y">Performance + A11y</span>
+                </div>
+                <div class="case-meta">
+                  <span class="case-tag">Drupal 9</span>
+                  <span class="case-tag">Agile</span>
+                  <span class="case-tag">QA</span>
+                </div>
+              </figcaption>
+            </figure>
+
+            <div class="card-body">
+              <h3 data-i18n="case_accenture_title">Accenture — Web Delivery (WP VIP / Drupal)</h3>
+              <p class="muted" data-i18n="case_accenture_desc">Frontend enterprise, performance, data layers y accesibilidad.</p>
+              <ul class="bullets">
+                <li data-i18n="case_accenture_b1">WordPress VIP, Drupal 9, Twig, SASS</li>
+                <li data-i18n="case_accenture_b2">QA + A/B testing</li>
+                <li data-i18n="case_accenture_b3">Compliance de accesibilidad</li>
+              </ul>
+              <button class="btn small" data-modal="accenture">
+                <span data-i18n="btn_view_details">Ver detalles</span>
+                <span class="sr-only" data-i18n="sr_case_accenture">del caso Accenture</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="skills_title">Skills (por áreas)</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h3 data-i18n="skills_seo_title">SEO técnico & contenido</h3>
+            <ul class="list">
+              <li data-i18n="skills_seo_1">Auditorías (crawling/indexing), canónicos, redirects, internal linking</li>
+              <li data-i18n="skills_seo_2">Schema/structured data, Open Graph, SEO internacional</li>
+              <li data-i18n="skills_seo_3">Crawl budget, Core Web Vitals, performance</li>
+              <li data-i18n="skills_seo_4">Briefs, intent mapping (ToFu/MoFu/BoFu)</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 data-i18n="skills_analytics_title">Analytics & experimentation</h3>
+            <ul class="list">
+              <li data-i18n="skills_analytics_1">GA4, GSC, Looker Studio, Power BI</li>
+              <li data-i18n="skills_analytics_2">Google Tag Manager events, dataLayer, tracking plans</li>
+              <li data-i18n="skills_analytics_3">A/B testing (metadata y contenido)</li>
+              <li data-i18n="skills_analytics_4">Dashboards para stakeholders/C-level</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 data-i18n="skills_web_title">Web / CMS</h3>
+            <ul class="list">
+              <li data-i18n="skills_web_1">HTML, CSS, JavaScript</li>
+              <li data-i18n="skills_web_2">WordPress, Webflow, Drupal, SharePoint</li>
+              <li data-i18n="skills_web_3">SSR/WPO (según stack), accesibilidad</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 data-i18n="skills_martech_title">Automation / MarTech</h3>
+            <ul class="list">
+              <li data-i18n="skills_martech_1">Mailchimp, HubSpot, Zapier, ActiveCampaign</li>
+              <li data-i18n="skills_martech_2">Salesforce Marketing Cloud (soporte campañas/segmentación)</li>
+              <li data-i18n="skills_martech_3">Funnel tracking + integraciones CRM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+
+        <div class="section-head">
+          <h2 data-i18n="experience_title">Experiencia</h2>
+          <p class="muted" data-i18n="experience_desc">
+            Roles recientes abiertos por defecto. Experiencia previa colapsada para mejor lectura.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- IQVIA (OPEN) -->
+          <details class="xp" open>
+            <summary class="t-head">
+              <strong>IQVIA</strong>
+              <span class="muted" data-i18n="xp_iqvia_role">MCM Digital Marketing Webmaster</span>
+              <span class="muted" data-i18n="xp_iqvia_dates">Ago 2025 – Presente</span>
+            </summary>
+            <div class="xp-body">
+              <p class="muted" data-i18n="xp_iqvia_intro">
+                Operación y optimización de propiedades web para marketing multicanal en entornos corporativos.
+              </p>
+              <ul class="list">
+                <li data-i18n="xp_iqvia_1">Administración y optimización de sitios web en Html,CSS,JS,SQL, SharePoint para iniciativas de marketing digital.</li>
+                <li data-i18n="xp_iqvia_2">Mejora de UX/UI y journeys orientados a conversión y reducción de fricción.</li>
+                <li data-i18n="xp_iqvia_3">Identificación de cuellos de botella en landings y funnels con enfoque data-driven.</li>
+                <li data-i18n="xp_iqvia_4">Soporte a campañas de Email Marketing con Salesforce Marketing Cloud.</li>
+                <li data-i18n="xp_iqvia_5">Colaboración con marketing, diseño, producto y stakeholders de negocio.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- KUESKI (OPEN) -->
+          <details class="xp" open>
+            <summary class="t-head">
+              <strong>Kueski</strong>
+              <span class="muted" data-i18n="xp_kueski_role">SEO Specialist</span>
+              <span class="muted" data-i18n="xp_kueski_dates">Ago 2024 – Mar 2025</span>
+            </summary>
+            <div class="xp-body">
+              <p class="muted" data-i18n="xp_kueski_intro">
+                Responsable de la estrategia de adquisición orgánica para productos fintech de alto impacto.
+              </p>
+              <ul class="list">
+                <li data-i18n="xp_kueski_1">Estrategia SEO end-to-end para Kueski Pay y Kueski Cash.</li>
+                <li data-i18n="xp_kueski_2">Keyword research, mapping ToFu/MoFu/BoFu y briefs de contenido.</li>
+                <li data-i18n="xp_kueski_3">Auditorías técnicas con Screaming Frog y GSC (crawling, indexación, canónicos).</li>
+                <li data-i18n="xp_kueski_4">Pruebas A/B en metadatos y bloques de contenido para optimizar CTR.</li>
+                <li data-i18n="xp_kueski_5">Dashboards y reporting en GA4, Looker Studio, Ahrefs y Semrush.</li>
+                <li data-i18n="xp_kueski_6">Colaboración con UX/UI, Producto y Contenidos.</li>
+                <li data-i18n="xp_kueski_7">Primeras iniciativas de ASO y optimización de contenido en YouTube.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- UNIVERSIDAD HUMANITAS (OPEN) -->
+          <details class="xp" open>
+            <summary class="t-head">
+              <strong>Universidad Humanitas</strong>
+              <span class="muted" data-i18n="xp_humanitas_role">Technical SEO & SEM Specialist</span>
+              <span class="muted" data-i18n="xp_humanitas_dates">May 2024 – Ago 2024</span>
+            </summary>
+            <div class="xp-body">
+              <p class="muted" data-i18n="xp_humanitas_intro">
+                SEO técnico para plataformas complejas desarrolladas en frameworks no tradicionales.
+              </p>
+              <ul class="list">
+                <li data-i18n="xp_humanitas_1">Diagnóstico y resolución de problemas de indexación en sitios Vue.js y Django.</li>
+                <li data-i18n="xp_humanitas_2">Implementación de SSR y mejoras de performance (Core Web Vitals).</li>
+                <li data-i18n="xp_humanitas_3">Optimización de metadatos, Open Graph y datos estructurados.</li>
+                <li data-i18n="xp_humanitas_4">Diseño de estrategia SEO internacional (MX / CO).</li>
+                <li data-i18n="xp_humanitas_5">Planificación y ejecución de migración SEO-safe a WordPress.</li>
+                <li data-i18n="xp_humanitas_6">Implementación de tracking avanzado con Google Tag Manager y JavaScript.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FREELANCE -->
+          <details class="xp">
+            <summary class="t-head">
+              <strong data-i18n="xp_freelance_company">Consultor Freelance</strong>
+              <span class="muted" data-i18n="xp_freelance_role">SEO, Web & Marketing Automation</span>
+              <span class="muted" data-i18n="xp_freelance_dates">Oct 2023 – May 2024</span>
+            </summary>
+            <div class="xp-body">
+              <ul class="list">
+                <li data-i18n="xp_freelance_1">Desarrollo de sitios web y landing pages SEO-first orientadas a conversión.</li>
+                <li data-i18n="xp_freelance_2">Implementación de embudos de leads integrados con CRM.</li>
+                <li data-i18n="xp_freelance_3">Automatización de email marketing con Mailchimp y ActiveCampaign.</li>
+                <li data-i18n="xp_freelance_4">Análisis de funnels y journeys con GA4 y Google Tag Manager.</li>
+                <li data-i18n="xp_freelance_5">Optimización UX basada en comportamiento del usuario (Clarity).</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- ACCENTURE -->
+          <details class="xp">
+            <summary class="t-head">
+              <strong>Accenture</strong>
+              <span class="muted" data-i18n="xp_accenture_role">Sr. Web Developer / CSEA</span>
+              <span class="muted" data-i18n="xp_accenture_dates">Mar 2022 – Sep 2023</span>
+            </summary>
+            <div class="xp-body">
+              <ul class="list">
+                <li data-i18n="xp_accenture_1">Desarrollo frontend enterprise con WordPress VIP y Drupal 9.</li>
+                <li data-i18n="xp_accenture_2">Trabajo con Twig, SASS y estándares de accesibilidad.</li>
+                <li data-i18n="xp_accenture_3">Ownership técnico de componentes web y data layers.</li>
+                <li data-i18n="xp_accenture_4">QA, performance testing y soporte a pruebas A/B.</li>
+                <li data-i18n="xp_accenture_5">Trabajo colaborativo en entornos Agile / Scrum.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- INTELISIS -->
+          <details class="xp">
+            <summary class="t-head">
+              <strong>Intelisis</strong>
+              <span class="muted" data-i18n="xp_intelisis_role">Web Designer & Marketing Technologist</span>
+              <span class="muted" data-i18n="xp_intelisis_dates">Mar 2020 – Mar 2022</span>
+            </summary>
+            <div class="xp-body">
+              <ul class="list">
+                <li data-i18n="xp_intelisis_1">Optimización SEO y UX del sitio corporativo.</li>
+                <li data-i18n="xp_intelisis_2">Gestión de contenidos alineados a KPIs.</li>
+                <li data-i18n="xp_intelisis_3">Integración de Google Ads, CRM y tracking de conversiones.</li>
+                <li data-i18n="xp_intelisis_4">Ejecución de campañas de email marketing y newsletters.</li>
+                <li data-i18n="xp_intelisis_5">Documentación técnica y capacitación a stakeholders.</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- EXPERIENCIA TEMPRANA -->
+          <details class="xp">
+            <summary class="t-head">
+              <strong data-i18n="xp_early_title">Experiencia temprana</strong>
+              <span class="muted" data-i18n="xp_early_role">Marketing, SEO & Web</span>
+              <span class="muted" data-i18n="xp_early_dates">2012 – 2020</span>
+            </summary>
+            <div class="xp-body">
+              <ul class="list">
+                <li data-i18n="xp_early_1">Webmaster y soporte SEO en IBERO (Drupal / WordPress).</li>
+                <li data-i18n="xp_early_2">SEO y eCommerce B2B en Dominion Industrial (PrestaShop + SAP).</li>
+                <li data-i18n="xp_early_3">Marketing digital y campañas en Calfer de México.</li>
+                <li data-i18n="xp_early_4">Community management, paid media y landing pages.</li>
+                <li data-i18n="xp_early_5">Asistente de marketing y soporte CRM en entornos B2B.</li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="contact_title">Contacto</h2>
+          <p class="muted" data-i18n="contact_desc">Si me compartes el rol, te contesto con enfoque (SEO / Web / MarTech).</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="form" id="contactForm">
+            <label>
+              <span data-i18n="form_name">Nombre</span>
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span data-i18n="form_email">Email</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span data-i18n="form_message">Mensaje</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn primary" type="submit" data-i18n="form_submit">Generar email</button>
+            <p class="muted tiny" data-i18n="form_note">Este formulario no envía en servidor. Abre tu cliente de correo con el mensaje listo.</p>
+          </form>
+
+          <aside class="panel">
+            <h3 data-i18n="contact_direct">Directo</h3>
+
+            <p class="muted">
+              <span data-i18n="contact_email_label">Email:</span>
+              <a class="link" href="mailto:lrc.luis.hernandez@gmail.com">lrc.luis.hernandez@gmail.com</a><br/>
+
+              <span data-i18n="contact_phone_label">Tel:</span>
+              <a class="link" href="tel:+525546526028">+52 55 4652 6028</a><br/>
+
+              <span data-i18n="contact_linkedin_label">LinkedIn:</span>
+              <a class="link" href="https://www.linkedin.com/in/luis-miguel-hernandez/" target="_blank" rel="noopener">/in/luis-miguel-hernandez</a>
+            </p>
+
+            <hr class="hr"/>
+
+            <a class="btn primary" href="https://calendly.com/lrc-luis-hernandez/45min" target="_blank" rel="noopener" data-i18n="calendly_cta">
+              Agendar llamada (45 min)
+            </a>
+
+            <p class="muted tiny" data-i18n="calendly_note">Agenda una llamada directamente en mi calendario.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Luis Hernández</span>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <dialog class="modal" id="modal">
+    <div class="modal-head">
+      <strong id="modalTitle" data-i18n="modal_title">Detalle</strong>
+      <button class="icon-btn" id="modalClose" type="button" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+
+  <!-- Floating actions -->
+  <button id="toTop" class="fab fab-top" type="button" aria-label="Volver arriba" title="Volver arriba" data-i18n-attr="aria-label:title" data-i18n="to_top_label">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8L6.4 13.4 5 12l7-7z"/>
+    </svg>
+  </button>
+
+  <a id="waFab" class="fab fab-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M19.11 17.53c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.61.13-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.13-1.15-.42-2.19-1.34-.81-.72-1.36-1.6-1.52-1.87-.16-.27-.02-.41.12-.54.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.04-.34-.02-.48-.07-.13-.61-1.47-.83-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.13.18 1.9 2.9 4.6 4.07.64.28 1.14.45 1.53.58.64.2 1.23.17 1.69.1.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.31z"/>
+      <path fill="currentColor" d="M26.66 5.34C24.02 2.7 20.52 1.25 16.78 1.25 9.09 1.25 2.83 7.51 2.83 15.2c0 2.46.64 4.86 1.85 6.97L2.71 30.5l8.55-1.94c2.05 1.12 4.35 1.71 6.7 1.71h.01c7.69 0 13.95-6.26 13.95-13.95 0-3.74-1.45-7.24-4.26-9.98zm-9.7 22.5h-.01c-2.09 0-4.15-.56-5.94-1.63l-.43-.25-5.07 1.15 1.08-4.95-.28-.47c-1.16-1.84-1.78-3.96-1.78-6.13 0-6.36 5.18-11.54 11.55-11.54 3.09 0 5.99 1.2 8.17 3.37 2.18 2.18 3.38 5.08 3.38 8.17 0 6.37-5.18 11.55-11.57 11.55z"/>
+    </svg>
+  </a>
+
+</body>
+</html>

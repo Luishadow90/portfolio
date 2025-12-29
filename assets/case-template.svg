@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Case study cover">
+  <defs>
+    <!-- Fondo tipo glass -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"></stop>
+      <stop offset="55%" stop-color="#101a2f"></stop>
+      <stop offset="100%" stop-color="#0b1220"></stop>
+    </linearGradient>
+
+    <!-- Glow brand -->
+    <radialGradient id="glow1" cx="30%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity=".22"></stop>
+      <stop offset="60%" stop-color="#5eead4" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity=".22"></stop>
+      <stop offset="60%" stop-color="#60a5fa" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- Card shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".35"></feDropShadow>
+    </filter>
+
+    <!-- Subtle noise -->
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 .06 0"></feColorMatrix>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bg)"></rect>
+  <rect width="1600" height="900" fill="url(#glow1)"></rect>
+  <rect width="1600" height="900" fill="url(#glow2)"></rect>
+  <rect width="1600" height="900" filter="url(#noise)" opacity=".6"></rect>
+
+  <!-- Glass panel -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="110" rx="44" ry="44" width="1380" height="680" fill="rgba(16,26,47,.70)" stroke="rgba(255,255,255,.10)" stroke-width="2"></rect>
+  </g>
+
+  <!-- Top badge -->
+  <g>
+    <rect x="170" y="170" rx="999" ry="999" width="210" height="54" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="2"></rect>
+    <text x="275" y="206" text-anchor="middle" font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="22" fill="rgba(255,255,255,.92)" font-weight="700">
+      BADGE
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="170" y="290" font-family="Sora,Inter,system-ui,Segoe UI,Roboto,Arial" font-size="54" fill="rgba(255,255,255,.96)" font-weight="800">
+    Case title goes here
+  </text>
+
+  <!-- Subtitle -->
+  <text x="170" y="352" font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="28" fill="rgba(255,255,255,.78)" font-weight="500">
+    Problem → Actions → Impact (short, NDA-friendly)
+  </text>
+
+  <!-- KPI big -->
+  <text x="170" y="480" font-family="Sora,Inter,system-ui,Segoe UI,Roboto,Arial" font-size="92" fill="rgba(255,255,255,.98)" font-weight="800">
+    +35%
+  </text>
+  <text x="170" y="532" font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="28" fill="rgba(255,255,255,.76)" font-weight="600">
+    KPI label (e.g., Sessions QoQ)
+  </text>
+
+  <!-- Chips -->
+  <g font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="22" font-weight="600" fill="rgba(255,255,255,.88)">
+    <g>
+      <rect x="170" y="585" rx="999" ry="999" width="150" height="46" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="2"></rect>
+      <text x="245" y="615" text-anchor="middle">Tech SEO</text>
+    </g>
+    <g>
+      <rect x="334" y="585" rx="999" ry="999" width="150" height="46" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="2"></rect>
+      <text x="409" y="615" text-anchor="middle">Analytics</text>
+    </g>
+    <g>
+      <rect x="498" y="585" rx="999" ry="999" width="140" height="46" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="2"></rect>
+      <text x="568" y="615" text-anchor="middle">UX</text>
+    </g>
+  </g>
+
+  <!-- Mini sparkline -->
+  <g transform="translate(1010 410)">
+    <rect x="0" y="0" rx="34" ry="34" width="400" height="260" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.10)" stroke-width="2"></rect>
+    <text x="28" y="54" font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="22" fill="rgba(255,255,255,.75)" font-weight="600">
+      Trend (synthetic)
+    </text>
+    <path d="M40 200 C 95 160, 120 170, 165 130 S 255 110, 290 85 S 350 70, 360 60" fill="none" stroke="#5eead4" stroke-width="5" stroke-linecap="round"></path>
+    <path d="M40 205 C 95 170, 120 178, 165 140 S 255 125, 290 105 S 350 92, 360 80" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" opacity=".85"></path>
+    <circle cx="360" cy="60" r="7" fill="#5eead4"></circle>
+  </g>
+
+  <!-- Footer line -->
+  <text x="170" y="740" font-family="Inter,system-ui,Segoe UI,Roboto,Arial" font-size="22" fill="rgba(255,255,255,.65)" font-weight="500">
+    NDA-friendly visual · metrics shown are aggregated / anonymized
+  </text>
+</svg>
